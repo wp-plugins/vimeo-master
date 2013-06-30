@@ -12,7 +12,7 @@ class techgasp_vimeomaster_widget extends WP_Widget {
 	function techgasp_vimeomaster_widget() {
 	$widget_ops = array( 'classname' => 'Vimeo Master', 'description' => __('Vimeo Master for lets you integrate the superb Vimeo Video quality into any Wordpress widget position. Only for professional websites. ', 'Vimeo Master') );
 	$control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'techgasp_vimeomaster_widget' );
-	$this->WP_Widget( 'techgasp_vimeomaster_widget', __('Vimeo Master', 'youtube master'), $widget_ops, $control_ops );
+	$this->WP_Widget( 'techgasp_vimeomaster_widget', __('Vimeo Master', 'vimeo master'), $widget_ops, $control_ops );
 	}
 	
 	function widget( $args, $instance ) {
