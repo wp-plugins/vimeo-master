@@ -2,7 +2,7 @@
 /**
 Plugin Name: Vimeo Master
 Plugin URI: http://wordpress.techgasp.com/vimeo-master/
-Version: 2.1
+Version: 2.2
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: vimeo-master
@@ -32,7 +32,11 @@ define('TECHGASP_VIMEOMASTER_ID', 'vimeo-master-options');
 // DEFINE PLUGIN NICK
 define('TECHGASP_VIMEOMASTER_NICK', 'Vimeo Master');
 
+// HOOK WIDGET
 require_once('techgasp-vimeomaster-widget.php');
+
+// HOOK INVITATION
+require_once('techgasp-vimeomaster-invite.php');
 
     class techgasp_vimeomaster
     {
@@ -97,7 +101,7 @@ require_once('techgasp-vimeomaster-widget.php');
 		*/
 		public static function content_with_quote($content)
 		{
-			$quote = '<p><blockquote>' . get_option('tsm_quote') . '</blockquote></p>';
+			$quote = '<p>' . get_option('tsm_quote') . '</p>';
 			return $content . $quote;
 		}
 		
