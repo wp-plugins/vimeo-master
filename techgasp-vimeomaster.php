@@ -2,7 +2,7 @@
 /**
 Plugin Name: Vimeo Master
 Plugin URI: http://wordpress.techgasp.com/vimeo-master/
-Version: 2.2
+Version: 2.3
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: vimeo-master
@@ -36,7 +36,7 @@ define('TECHGASP_VIMEOMASTER_NICK', 'Vimeo Master');
 require_once('techgasp-vimeomaster-widget.php');
 
 // HOOK INVITATION
-require_once('techgasp-vimeomaster-invite.php');
+
 
     class techgasp_vimeomaster
     {
