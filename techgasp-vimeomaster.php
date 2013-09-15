@@ -36,7 +36,6 @@ define('TECHGASP_VIMEOMASTER_NICK', 'Vimeo Master');
 require_once('techgasp-vimeomaster-widget.php');
 
 // HOOK INVITATION
-require_once('techgasp-vimeomaster-invite.php');
 
     class techgasp_vimeomaster
     {
