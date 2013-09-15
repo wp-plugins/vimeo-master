@@ -65,7 +65,7 @@ class techgasp_vimeomaster_widget extends WP_Widget {
 	<hr>
 	<p>Full help, read our online documentation.</p>
 	<hr>
-	<p><b>Vimeo Master Advanced Version</b></p>
+	<p><b>Get the full Advanced Version</b></p>
 	<p><a class="button-primary" href="http://wordpress.techgasp.com/vimeo-master/" target="_blank" title="Vimeo Master Advanced Version">Vimeo Master Advanced Version</a></p>
 	<?php
 	}
