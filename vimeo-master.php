@@ -2,14 +2,14 @@
 /**
 Plugin Name: Vimeo Master
 Plugin URI: http://wordpress.techgasp.com/vimeo-master/
-Version: 2.4
+Version: 4.0
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: vimeo-master
 Description: Vimeo Master for let's you integrate the superb Vimeo Video quality into any Wordpress widget position. Only for professional websites.
 License: GPL2 or later
 */
-/*  Copyright 2013 TechGasp  (email : info@techgasp.com)
+/* Copyright 2013 TechGasp  (email : info@techgasp.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -24,21 +24,25 @@ License: GPL2 or later
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-if(!class_exists('techgasp_vimeomaster')) :
+
+if(!class_exists('vimeo_master')) :
 
 // DEFINE PLUGIN ID
-define('TECHGASP_VIMEOMASTER_ID', 'vimeo-master-options');
+define('VIMEO_MASTER_ID', 'vimeo-master');
 
 // DEFINE PLUGIN NICK
-define('TECHGASP_VIMEOMASTER_NICK', 'Vimeo Master');
+define('VIMEO_MASTER_NICK', 'Vimeo Master');
 
 // HOOK WIDGET
-require_once('techgasp-vimeomaster-widget.php');
+require_once('includes/vimeo-master-widget.php');
 
 // HOOK INVITATION
 
-    class techgasp_vimeomaster
-    {
+
+// HOOK SHORTCODE
+
+
+	class vimeo_master{
 		/** function/method
 		* Usage: return absolute file path
 		* Arg(1): string
@@ -53,9 +57,9 @@ require_once('techgasp-vimeomaster-widget.php');
 		* Arg(0): null
 		* Return: void
 		*/
-		public static function techgasp_vimeomaster_register()
+		public static function vimeo_master_register()
 		{
-			register_setting(TECHGASP_VIMEOMASTER_ID.'_options', 'tsm_quote');
+			register_setting(VIMEO_MASTER_ID, 'tsm_quote');
 		}
 		/** function/method
 		* Usage: hooking (registering) the plugin menu
@@ -65,8 +69,8 @@ require_once('techgasp-vimeomaster-widget.php');
 		public static function menu()
 		{
 			// Create menu tab
-			add_options_page(TECHGASP_VIMEOMASTER_NICK.' Plugin Options', TECHGASP_VIMEOMASTER_NICK, 'manage_options', TECHGASP_VIMEOMASTER_ID.'_options', array('techgasp_vimeomaster', 'options_page'));
-			add_filter( 'plugin_action_links', array('techgasp_vimeomaster', 'techgasp_vimeomaster_link'), 10, 2 );
+			add_options_page(VIMEO_MASTER_NICK.' Plugin Options', VIMEO_MASTER_NICK, 'manage_options', VIMEO_MASTER_ID.'-admin', array('vimeo_master', 'options_page'));
+			add_filter( 'plugin_action_links', array('vimeo_master', 'vimeo_master_link'), 10, 2 );
 		}
 		/** function/method
 		* Usage: show options/settings form page
@@ -79,20 +83,20 @@ require_once('techgasp-vimeomaster-widget.php');
 			{
 				wp_die( __('You do not have sufficient permissions to access this page.') );
 			}
-			$plugin_id = TECHGASP_VIMEOMASTER_ID;
+			$plugin_id = VIMEO_MASTER_ID;
 			// display options page
-			include(self::file_path('techgasp-vimeomaster-admin.php'));
+			include(self::file_path('includes/vimeo-master-admin.php'));
 		}
 		/** function/method
-                * Usage: show options/settings form page
-                * Arg(0): null
-                * Return: void
-                */
-		 public static function techgasp_vimeomaster_widget()
-                {
-                        // display widget page
-                        include(self::file_path('techgasp-vimeomaster-widget.php'));
-                }
+		* Usage: show options/settings form page
+		* Arg(0): null
+		* Return: void
+		*/
+		 public static function vimeo_master_widget()
+		{
+			// display widget page
+			include(self::file_path('includes/vimeo-master-widget.php'));
+		}
 		/** function/method
 		* Usage: filtering the content
 		* Arg(1): string
@@ -103,23 +107,24 @@ require_once('techgasp-vimeomaster-widget.php');
 			$quote = '<p>' . get_option('tsm_quote') . '</p>';
 			return $content . $quote;
 		}
-		
 		// Add settings link on plugin page
-		public function techgasp_vimeomaster_link($links, $file) {
-		static $this_plugin;
-		if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
-		if ($file == $this_plugin){
-		$settings_link = '<a href="' . admin_url( 'options-general.php?page='.TECHGASP_VIMEOMASTER_ID).'_options' . '">' . __( 'Settings' ) . '</a>';
-		array_unshift($links, $settings_link);
+		public function vimeo_master_link($links, $file) {
+			static $this_plugin;
+			if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
+			if ($file == $this_plugin){
+				$settings_link = '<a href="' . admin_url( 'options-general.php?page='.VIMEO_MASTER_ID).'-admin' . '">' . __( 'Settings' ) . '</a>';
+				array_unshift($links, $settings_link);
+			}
+			return $links;
 		}
-		return $links;
-		}
+		// Advanced Updater
 	}
-		if ( is_admin() )
+	if ( is_admin() )
 		{
-		add_action('admin_init', array('techgasp_vimeomaster', 'techgasp_vimeomaster_register'));
-		add_action('admin_menu', array('techgasp_vimeomaster', 'menu'));
+		add_action('admin_init', array('vimeo_master', 'vimeo_master_register'));
+		add_action('admin_menu', array('vimeo_master', 'menu'));
+		
 		}
-		add_filter('the_content', array('techgasp_vimeomaster', 'content_with_quote'));
+	add_filter('the_content', array('vimeo_master', 'content_with_quote'));
 endif;
 ?>
