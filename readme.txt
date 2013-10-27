@@ -92,6 +92,7 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 3. Widget With Vimeo Player + Vimeo Profile Button (different widget position).
 4. Widget inside pages and posts. Shortcode framework implementation v2. Vimeo Video inside a page.
 5. Widget inside pages and posts. Shortcode framework implementation v2. Vimeo Video inside a post aligned left.
+6. Widget With Pro Account and Password Protected Video.
 
 
 == Changelog ==
