@@ -24,15 +24,21 @@ class vimeo_master_widget extends WP_Widget {
 		echo $before_widget;
 		
 	// Display the widget title
-		if ( $title )
+		if ( $title ){
 		echo $before_title . $name . $after_title;
+		}
+		else{
+		}
 	//Display Vimeo Video
 		
 	//Display Vimeo Profile Button
-		if ( $show_vimeobutton )
+		if ( $show_vimeobutton ){
 		$url_loc = plugins_url();
 		echo '<br/>' .
 		'<a href="'.$vimeobutton_page.'" target="_blank"><img src="'.$url_loc.'/vimeo-master/images/techgasp-vimeo-button.png"></a>';
+		}
+		else{
+		}
 	echo $after_widget;
 	}
 	//Update the widget

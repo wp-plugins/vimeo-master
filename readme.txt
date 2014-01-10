@@ -3,7 +3,7 @@ Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, vimeo, video, playlist, vimeo video, vimeo playlist, vimeo channel, video player
 Requires at least: 3.5
 Tested up to: 3.8
-Stable tag: 4.1
+Stable tag: 4.1.1
 License: GPLv2 or later
 
 Vimeo Master for let's you integrate the superb Vimeo Video quality into any Wordpress widget position. Only for professional websites.
@@ -67,12 +67,12 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 = Where is the Player? =
 * Advanced Version contains: Display or hide Widget Title, Display or hide Vimeo Profile Button, Display or hide Vimeo Player, Shortcode Framework v2, publish widget inside pages and posts
-* [Advaced Version Link](http://wordpress.techgasp.com/vimeo-master/)
+* [Advanced Version Link](http://wordpress.techgasp.com/vimeo-master/)
 
 = Insert Widget in Pages or Posts =
 * Advanced Version contains the shortcode framework v2
 * Insert the shortcode into any page or post. [vimeo-master]
-* [Advaced Version Link](http://wordpress.techgasp.com/vimeo-master/)
+* [Advanced Version Link](http://wordpress.techgasp.com/vimeo-master/)
 
 = What's this Shortcode Framework v2 =
 * It's a framework developed by TechGasp and built upon wordpress marvellous resources
@@ -96,6 +96,9 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 
 == Changelog ==
+
+= 4.1.1 =
+* Fixes issue with Vimeo button display
 
 = 4.1 =
 * Wordpress 3.8 Ready
