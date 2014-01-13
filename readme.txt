@@ -3,7 +3,7 @@ Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, vimeo, video, playlist, vimeo video, vimeo playlist, vimeo channel, video player
 Requires at least: 3.5
 Tested up to: 3.8
-Stable tag: 4.1.1
+Stable tag: 4.2
 License: GPLv2 or later
 
 Vimeo Master for let's you integrate the superb Vimeo Video quality into any Wordpress widget position. Only for professional websites.
@@ -15,6 +15,8 @@ Another outstanding plugin for wordpress. Vimeo Master let's you integrate the s
 Done with TechGasp style, uses minimal html5 code (error free, no javascipt or Ajax, no conflicts) for fast page load times.
 
 The superior solution of professional video presentations for business, design, arts, etc. Looks great inside pages, posts or blogs with our shortcode framework implementation. Have full control over Auto-Play, Video Loop, Video Color and Video Size to match your template.
+
+Both the widget and the shortcode framework are fully mobile devices responsive, a must for any professional website.
 
 **Quality Videos for Wordpress**
 
@@ -35,6 +37,7 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 * Video Loop Option
 * Vimeo Color Option
 * Vimeo Player width and height Option
+* Mobiles Devices Responsive
 * Shortcode Framework v2. Publish widget inside pages and posts
 * [Advanced Version Link](http://wordpress.techgasp.com/vimeo-master/)
 
@@ -96,6 +99,12 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 
 == Changelog ==
+
+= 4.2 =
+* Fully Mobile Devices Responsive
+* Widget functions
+* Adding Style
+* Adding index.php SEC
 
 = 4.1.1 =
 * Fixes issue with Vimeo button display
