@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, vimeo, video, playlist, vimeo video, vimeo playlist, vimeo channel, video player
 Requires at least: 3.5
-Tested up to: 3.8
-Stable tag: 4.2
+Tested up to: 3.8.1
+Stable tag: 4.3
 License: GPLv2 or later
 
 Vimeo Master for let's you integrate the superb Vimeo Video quality into any Wordpress widget position. Only for professional websites.
@@ -25,26 +25,32 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 **LITE Version Contains:**
 
-* Display or hide Widget Title
-* Display or hide Vimeo Profile Button
+* Display, change or hide Widget Title
+* Vimeo Buttons Widget (Connect to Profile Button)
 
 **ADVANCED Version Contains:**
 
-* Display or hide Widget Title
-* Display or hide Vimeo Profile Button
-* Display or hide Vimeo Video Player
+* Display, change or hide Widget Title
+* Fully Mobile Responsive
+* Vimeo Buttons Widget (Connect to Profile Button)
+* Vimeo Basic Player Widget (Fast page load times, designed for fast deployments)
+* Vimeo Advanced Player Widget, Options:
+* Vimeo Video Intro (Portrait, Title, Byline)
+* Player Width
+* Player Height
 * Auto-Play Option
 * Video Loop Option
 * Vimeo Color Option
+* Vimeo Video Underneath Text Link
+* Vimeo Description Below Video
 * Vimeo Player width and height Option
-* Mobiles Devices Responsive
-* Shortcode Framework v2. Publish widget inside pages and posts
+* Shortcode Framework v3. Universal Shortcode for all pages and posts and Individual Shortcode for each page or post
 * [Advanced Version Link](http://wordpress.techgasp.com/vimeo-master/)
 
 **ONLINE DEMO**
 
 * Right of the page, sidebar widget
-* Inside the post. With shortcode framework v2
+* Inside the post. With shortcode framework v3
 * [Demo Link](http://wordpress.techgasp.com/vimeo-master/)
 
 **More High Quality Plugins?**
@@ -59,7 +65,7 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 1. Use the Wordpress Installer, Updater
 2. Activate in the "Plugins" admin panel.
-3. Visit the "Widget Page | Vimeo Master" to configure the settings and your template widget position.
+3. Visit the "Widget Page | Vimeo Master Widgets" to configure widget settings and your template widget positions
 4. [Vimeo Master Documentation](http://wordpress.techgasp.com/vimeo-master-documentation)
 
 
@@ -68,20 +74,21 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 = Issues with buttons display =
 * Please update to latest version. Up-to-date API's are available
 
-= Where is the Player? =
-* Advanced Version contains: Display or hide Widget Title, Display or hide Vimeo Profile Button, Display or hide Vimeo Player, Shortcode Framework v2, publish widget inside pages and posts
+= Where is the Players? =
+* Advanced Version Add-ons contain the players
 * [Advanced Version Link](http://wordpress.techgasp.com/vimeo-master/)
 
 = Insert Widget in Pages or Posts =
-* Advanced Version contains the shortcode framework v2
-* Insert the shortcode into any page or post. [vimeo-master]
+* Advanced Version Add-ons contain the shortcode framework v3
+* Insert the universal shortcode into any page or post. [vimeo-master-un]
+* Insert the individual shortcode into any page or post. [vimeo-master]
 * [Advanced Version Link](http://wordpress.techgasp.com/vimeo-master/)
 
-= What's this Shortcode Framework v2 =
+= What's this Shortcode Framework v3 =
 * It's a framework developed by TechGasp and built upon wordpress marvellous resources
 * Allows users to quickly and easily display plugins or widgets inside their pages and posts
-* It's available in all TechGasp advanced version plugins. Lite versions plugins do not include shortcode framework v2
-* [About Shortcode Framework v2](http://wordpress.techgasp.com/new-wordpress-framework-from-techgasp/)
+* It's available in all TechGasp advanced version plugins. Lite versions plugins do not include shortcode framework v3
+* [About Shortcode Framework v3](http://wordpress.techgasp.com/techgasp-wordpress-framework-v3/)
 
 = Need More Help =
 * [Vimeo Master Documentation](http://wordpress.techgasp.com/vimeo-master-documentation)
@@ -99,6 +106,15 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 
 == Changelog ==
+
+= 4.3 =
+* New TechGasp Plugin Framework
+* New Plugin Menu
+* New Administrator Page
+* New Universal Shortcode that can be combined with Individual Shortcodes in Pages and Posts
+* Adding index SEC
+* New Vimeo API with more player options
+* New Widgets
 
 = 4.2 =
 * Fully Mobile Devices Responsive
@@ -154,8 +170,11 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 == Upgrade Notice ==
 
+= 4.3 =
+* IMPORTANT Upgrade to new TechGasp Plugin Framework v3
+
 = 4.0 =
-* IMPORTANT Upgrade to new framework
+* IMPORTANT Upgrade to new TechGasp Plugin Framework v2
 
 = 2.0 =
 * IMPORTANT Upgrade to Stable release
