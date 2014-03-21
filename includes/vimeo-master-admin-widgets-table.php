@@ -26,16 +26,16 @@ class vimeo_master_admin_widgets_table extends WP_List_Table {
 
 	<tbody>
 		<tr class="alternate">
-			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-vimeomaster-admin-widget-buttons.png', __FILE__); ?>" alt="Vimeo Master" align="left" width="300px" height="135px" style="padding:5px;"/></td>
-			<td class="column-columnname"style="vertical-align:middle"><h3>Buttons Widget</h3><p>The perfect widget if you only want to display the Vimeo Profile Connect Button. A great way to connect people or display your cool Vimeo profile.</p><p>This widget works great when published under any of the widget players. Check the Add-ons Page.</p></td>
+			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-vimeomaster-admin-widget-buttons.png', __FILE__); ?>" alt="<?php echo get_option('vimeo_master_name'); ?>" align="left" width="300px" height="135px" style="padding:5px;"/></td>
+			<td class="column-columnname"style="vertical-align:middle"><h3>Buttons Widget</h3><p>The perfect widget if you only want to display the Vimeo Profile Connect Button. A great way to connect people or display your cool Vimeo profile.</p><p>This widget works great when published under any of the widget players. Navigate to your wordpress widgets page and start using it.</p></td>
 		</tr>
 		<tr>
-			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-vimeomaster-admin-widget-basic.png', __FILE__); ?>" alt="Vimeo Master" align="left" width="300px" height="135px" style="padding:5px;"/></td>
-			<td class="column-columnname"style="vertical-align:middle"><h3>Basic Player Widget</h3><p>The Basic Vimeo Player Widget was specially designed for fast loading times and is perfect to display a simple video. All player options are on automatic settings so it's easy and fast to deploy by any wordpress administrator.</p><p>This widget is fully <b>Mobile Responsive</b>. Check the Add-ons Page.</p></td>
+			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-vimeomaster-admin-widget-basic.png', __FILE__); ?>" alt="<?php echo get_option('vimeo_master_name'); ?>" align="left" width="300px" height="135px" style="padding:5px;"/></td>
+			<td class="column-columnname"style="vertical-align:middle"><h3>Basic Player Widget</h3><p>The Basic Vimeo Player Widget was specially designed for fast loading times and is perfect to display a simple video. All player options are on automatic settings so it's easy and fast to deploy by any wordpress administrator.</p><p>This widget is fully <b>Mobile Responsive</b>. Check Add-ons page.</p></td>
 		</tr>
 		<tr class="alternate">
-			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-vimeomaster-admin-widget-advanced.png', __FILE__); ?>" alt="Vimeo Master" align="left" width="300px" height="135px" style="padding:5px;"/></td>
-			<td class="column-columnname"style="vertical-align:middle"><h3>Advanced Player Widget</h3><p>The Advanced Vimeo Player Widget was specially designed to grant you all Vimeo Player Options, you have full control over Video Intro (Portrait, Title, Byline), Auto-Play, Video Loop, Player Color and Player width or height. All player options are customizable, still extremely easy to use.</p><p>This widget is fully <b>Mobile Responsive</b>. Check the Add-ons Page.</p></td>
+			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-vimeomaster-admin-widget-advanced.png', __FILE__); ?>" alt="<?php echo get_option('vimeo_master_name'); ?>" align="left" width="300px" height="135px" style="padding:5px;"/></td>
+			<td class="column-columnname"style="vertical-align:middle"><h3>Advanced Player Widget</h3><p>The Advanced Vimeo Player Widget was specially designed to grant you all Vimeo Player Options, you have full control over Video Intro (Portrait, Title, Byline), Auto-Play, Video Loop, Player Color and Player width or height. All player options are customizable, still extremely easy to use.</p><p>This widget is fully <b>Mobile Responsive</b>. Check Add-ons page.</p></td>
 		</tr>
 	</tbody>
 </table>

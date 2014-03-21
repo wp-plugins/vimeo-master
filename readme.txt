@@ -3,7 +3,7 @@ Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, vimeo, video, playlist, vimeo video, vimeo playlist, vimeo channel, video player
 Requires at least: 3.5
 Tested up to: 3.8.1
-Stable tag: 4.3
+Stable tag: 4.3.5
 License: GPLv2 or later
 
 Vimeo Master for let's you integrate the superb Vimeo Video quality into any Wordpress widget position. Only for professional websites.
@@ -24,17 +24,21 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 
 **LITE Version Contains:**
-
 * Display, change or hide Widget Title
 * Vimeo Buttons Widget (Connect to Profile Button)
 
 **ADVANCED Version Contains:**
-
 * Display, change or hide Widget Title
 * Fully Mobile Responsive
-* Vimeo Buttons Widget (Connect to Profile Button)
-* Vimeo Basic Player Widget (Fast page load times, designed for fast deployments)
-* Vimeo Advanced Player Widget, Options:
+
+* Vimeo Buttons Widget:
+* Connect to Profile Button
+
+* Vimeo Basic Player Widget:
+* Fast page load times
+* designed for fast deployments
+
+* Vimeo Advanced Player Widget:
 * Vimeo Video Intro (Portrait, Title, Byline)
 * Player Width
 * Player Height
@@ -43,8 +47,13 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 * Vimeo Color Option
 * Vimeo Video Underneath Text Link
 * Vimeo Description Below Video
+* TechGasp Video Responsiveness, automatically sets the perfect video size both on desktops and mobile devices
 * Vimeo Player width and height Option
-* Shortcode Framework v3. Universal Shortcode for all pages and posts and Individual Shortcode for each page or post
+
+* TechGasp Shortcode Framework v3:
+* Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
+* Individual Shortcode for each page or post, individual customized shortcode per page or post
+* Shortcodes allow you to professionally display your plugin inside pages and posts maintaining fast page load times and excellent Google SEO
 * [Advanced Version Link](http://wordpress.techgasp.com/vimeo-master/)
 
 **ONLINE DEMO**
@@ -100,12 +109,22 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 1. Widget With Vimeo Player + Vimeo Profile Button.
 2. Widget With Vimeo Player
 3. Widget With Vimeo Player + Vimeo Profile Button (different widget position).
-4. Widget inside pages and posts. Shortcode framework implementation v2. Vimeo Video inside a page.
-5. Widget inside pages and posts. Shortcode framework implementation v2. Vimeo Video inside a post aligned left.
+4. Widget inside pages and posts. Shortcode framework implementation. Vimeo Video inside a page.
+5. Widget inside pages and posts. Shortcode framework implementation. Vimeo Video inside a post aligned left.
 6. Widget With Pro Account and Password Protected Video.
 
 
 == Changelog ==
+
+= 4.3.5 =
+* TechGasp Plugin Framework v3 Improvements and Upgrades
+* New Universal Shortcode Options:
+* Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page and post
+* Option to Automatically only show the shortcode in Posts, not Pages
+* Option to Automatically show the shortcode After the Title or After the Content
+* Improved TechGasp Mobile Responsiveness
+* Code clean up and speed up
+* Fixed a couple of warnings
 
 = 4.3 =
 * New TechGasp Plugin Framework
