@@ -2,7 +2,7 @@
 /**
 Plugin Name: Vimeo Master
 Plugin URI: http://wordpress.techgasp.com/vimeo-master/
-Version: 4.3.5
+Version: 4.3.6
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: vimeo-master
@@ -28,9 +28,9 @@ if(!class_exists('vimeo_master')) :
 ///////DEFINE ID//////
 define('VIMEO_MASTER_ID', 'vimeo-master');
 ///////DEFINE VERSION///////
-define( 'vimeo_master_VERSION', '4.3.5' );
+define( 'vimeo_master_VERSION', '4.3.6' );
 global $vimeo_master_version, $vimeo_master_name;
-$vimeo_master_version = "4.3.5"; //for other pages
+$vimeo_master_version = "4.3.6"; //for other pages
 $vimeo_master_name = "Vimeo Master"; //pretty name
 if( is_multisite() ) {
 update_site_option( 'vimeo_master_installed_version', $vimeo_master_version );

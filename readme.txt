@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, vimeo, video, playlist, vimeo video, vimeo playlist, vimeo channel, video player
 Requires at least: 3.5
-Tested up to: 3.8.1
-Stable tag: 4.3.5
+Tested up to: 3.8.2
+Stable tag: 4.3.6
 License: GPLv2 or later
 
 Vimeo Master for let's you integrate the superb Vimeo Video quality into any Wordpress widget position. Only for professional websites.
@@ -116,6 +116,9 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 == Changelog ==
 
+= 4.3.6 =
+* Added automatic deletion of site_transients
+
 = 4.3.5 =
 * TechGasp Plugin Framework v3 Improvements and Upgrades
 * New Universal Shortcode Options:
@@ -125,6 +128,7 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 * Improved TechGasp Mobile Responsiveness
 * Code clean up and speed up
 * Fixed a couple of warnings
+* Improved Updater 
 
 = 4.3 =
 * New TechGasp Plugin Framework
