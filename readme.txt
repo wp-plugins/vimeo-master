@@ -2,7 +2,7 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, vimeo, video, playlist, vimeo video, vimeo playlist, vimeo channel, video player
 Requires at least: 3.5
-Tested up to: 3.8.2
+Tested up to: 3.9
 Stable tag: 4.3.6
 License: GPLv2 or later
 
