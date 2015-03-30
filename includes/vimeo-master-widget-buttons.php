@@ -26,12 +26,20 @@ class vimeo_master_widget_buttons extends WP_Widget {
 	// Display the widget title
 		if ( $vimeo_title ){
 			if (empty ($vimeo_title_new)){
-			$vimeo_title_new = "Vimeo Master";
+			if(is_multisite()){
+			$vimeo_title_new = get_site_option('vimeo_master_name');
+			}
+			else{
+			$vimeo_title_new = get_option('vimeo_master_name');
 			}
 		echo $before_title . $vimeo_title_new . $after_title;
 		}
 		else{
+		echo $before_title . $vimeo_title_new . $after_title;
 		}
+	}
+	else{
+	}
 	//Display Vimeo Profile Button
 		if ( $show_vimeobutton ){
 		$url_loc = plugins_url();

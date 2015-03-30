@@ -2,7 +2,7 @@
 /**
 Plugin Name: Vimeo Master
 Plugin URI: http://wordpress.techgasp.com/vimeo-master/
-Version: 4.3.6
+Version: 4.4.1.4
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: vimeo-master
@@ -25,12 +25,16 @@ License: GPL2 or later
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 if(!class_exists('vimeo_master')) :
+///////DEFINE DIR///////
+define( 'VIMEO_MASTER_DIR', plugin_dir_path( __FILE__ ) );
+///////DEFINE URL///////
+define( 'VIMEO_MASTER_URL', plugin_dir_url( __FILE__ ) );
 ///////DEFINE ID//////
-define('VIMEO_MASTER_ID', 'vimeo-master');
+define( 'VIMEO_MASTER_ID', 'vimeo-master');
 ///////DEFINE VERSION///////
-define( 'vimeo_master_VERSION', '4.3.6' );
+define( 'VIMEO_MASTER_VERSION', '4.4.1.4' );
 global $vimeo_master_version, $vimeo_master_name;
-$vimeo_master_version = "4.3.6"; //for other pages
+$vimeo_master_version = "4.4.1.4"; //for other pages
 $vimeo_master_name = "Vimeo Master"; //pretty name
 if( is_multisite() ) {
 update_site_option( 'vimeo_master_installed_version', $vimeo_master_version );
@@ -56,7 +60,7 @@ require_once( dirname( __FILE__ ) . '/includes/vimeo-master-widget-buttons.php')
 class vimeo_master{
 //REGISTER PLUGIN
 public static function vimeo_master_register(){
-register_setting(VIMEO_MASTER_ID, 'tsm_quote');
+register_activation_hook( __FILE__, array( __CLASS__, 'vimeo_master_activate' ) );
 }
 public static function content_with_quote($content){
 $quote = '<p>' . get_option('tsm_quote') . '</p>';
@@ -64,10 +68,15 @@ $quote = '<p>' . get_option('tsm_quote') . '</p>';
 }
 //SETTINGS LINK IN PLUGIN MANAGER
 public static function vimeo_master_links( $links, $file ) {
-	if ( $file == plugin_basename( dirname(__FILE__).'/vimeo-master.php' ) ) {
-		$links[] = '<a href="' . admin_url( 'admin.php?page=vimeo-master' ) . '">'.__( 'Settings' ).'</a>';
+if ( $file == plugin_basename( dirname(__FILE__).'/vimeo-master.php' ) ) {
+		if( is_network_admin() ){
+		$techgasp_plugin_url = network_admin_url( 'admin.php?page=vimeo-master' );
+		}
+		else {
+		$techgasp_plugin_url = admin_url( 'admin.php?page=vimeo-master' );
+		}
+	$links[] = '<a href="' . $techgasp_plugin_url . '">'.__( 'Settings' ).'</a>';
 	}
-
 	return $links;
 }
 
@@ -99,8 +108,9 @@ update_option( 'vimeo_master_newest_version', $r->new_version );
 }
 }
 }
+//Remove WP Updater
 // Advanced Updater
-
+//Updater Label Message
 //END CLASS
 }
 if ( is_admin() ){
@@ -110,4 +120,3 @@ if ( is_admin() ){
 add_filter('the_content', array('vimeo_master', 'content_with_quote'));
 add_filter( 'plugin_action_links', array('vimeo_master', 'vimeo_master_links'), 10, 2 );
 endif;
-?>
