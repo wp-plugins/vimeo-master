@@ -71,7 +71,7 @@ class vimeo_master_widget_buttons extends WP_Widget {
 		<br>
 		<b>Check the buttons to be displayed:</b>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['vimeo_title'], true ); ?> id="<?php echo $this->get_field_id( 'vimeo_title' ); ?>" name="<?php echo $this->get_field_name( 'vimeo_title' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'vimeo_title' ); ?>"><b><?php _e('Display Widget Title', 'vimeo_master'); ?></b></label></br>
@@ -81,9 +81,9 @@ class vimeo_master_widget_buttons extends WP_Widget {
 	<br>
 	<input id="<?php echo $this->get_field_id( 'vimeo_title_new' ); ?>" name="<?php echo $this->get_field_name( 'vimeo_title_new' ); ?>" value="<?php echo $instance['vimeo_title_new']; ?>" style="width:auto;" />
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['show_vimeobutton'], true ); ?> id="<?php echo $this->get_field_id( 'show_vimeobutton' ); ?>" name="<?php echo $this->get_field_name( 'show_vimeobutton' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'show_vimeobutton' ); ?>"><b><?php _e('Vimeo Profile Button', 'vimeo_master'); ?></b></label></br>
@@ -92,9 +92,9 @@ class vimeo_master_widget_buttons extends WP_Widget {
 	<label for="<?php echo $this->get_field_id( 'vimeobutton_page' ); ?>"><?php _e('insert your Vimeo Profile Link:', 'vimeo_master'); ?></label></br>
 	<input id="<?php echo $this->get_field_id( 'vimeobutton_page' ); ?>" name="<?php echo $this->get_field_name( 'vimeobutton_page' ); ?>" value="<?php echo $instance['vimeobutton_page']; ?>" style="width:auto;" />
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 		<p>
-		<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+		<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; width:16px; vertical-align:middle;" />
 		&nbsp;
 		<b><?php echo get_option('vimeo_master_name'); ?> Website</b>
 		</p>
